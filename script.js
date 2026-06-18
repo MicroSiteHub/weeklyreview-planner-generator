@@ -76,15 +76,15 @@ function generate() {
     const row = document.createElement("tr");
 
     const habitCell = document.createElement("td");
-    habitCell.className = "habit-name-cell";
+    habitCell.className = "schedule-name-cell";
     row.appendChild(habitCell);
 
     for (let d = 0; d < 7; d++) {
       const cell = document.createElement("td");
-      cell.className = "habit-day-cell";
+      cell.className = "schedule-day-cell";
 
       const box = document.createElement("div");
-      box.className = "habit-checkbox";
+      box.className = "schedule-checkbox";
 
       cell.appendChild(box);
       row.appendChild(cell);
